@@ -37,7 +37,7 @@ winget install -e --id ShiningLight.OpenSSL
 openssl version
 ```
 If you see the version number, OpenSSL is correctly installed.
-If OpenSSL is installed but not recognized
+**If OpenSSL is installed but not recognized**
 
 If the openssl command is not recognized, you might need to add OpenSSL to your system PATH:
 
