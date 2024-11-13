@@ -35,3 +35,17 @@ winget install -e --id ShiningLight.OpenSSL
 
 # After installation, you can verify the installation by checking the OpenSSL version:
 openssl version
+```
+If you see the version number, OpenSSL is correctly installed.
+If OpenSSL is installed but not recognized
+
+If the openssl command is not recognized, you might need to add OpenSSL to your system PATH:
+
+1. Open the Start Menu, search for Environment Variables, and select Edit the system environment variables.
+2. In the System Properties window, click Environment Variables.
+3. Under System variables, find and select the Path variable, then click Edit.
+4. Click New, and enter the path to the folder where OpenSSL is installed (e.g., C:\Program Files\OpenSSL-Win64\bin).
+5. Click OK to save and close all windows.
+6. Restart PowerShell (or Visual Studio Code) and try openssl version again.
+
+This should ensure that OpenSSL is recognized in your terminal.
